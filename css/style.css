@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header,.logo,nav{
+    display: flex;
+}
+header{
+    justify-content: space-between;
+    height: 7vh;
+    padding:0 1em;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+header>.logo{
+    align-items: center;
+}
+header>.logo>img{
+    max-width:40px;
+    /* width: 100%; */
+    /* object-fit: cover; */
+    height:30px;
+    padding-right: .6em;
+}
+header>.logo>p{
+    font-size: .8rem;
+}
+header>nav>a,.hero>:nth-child(1),main>.post>:nth-child(2),.post-hero>:nth-child(1){
+    font-size: .81rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header>nav>a{
+    text-decoration: none;
+    color: #000;
+}
+header>nav>:nth-child(2){
+    padding-left:2em;
+}
+.hero{
+    color:#ffffff;
+   
+    height: 68vh;
+
+    width: 100%;
+    object-fit: cover;
+    background:url('../images/bg-medium.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+
+}
+
+.hero>h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: .4em 0;
+    letter-spacing: 1px;
+    
+}
+.posts-title{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: .4em 0;
+    letter-spacing: 1px;
+
+}
+.hero>:nth-child(3),.post-hero>p,.aboutMe-paragraph{
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    font-size: .8rem;
+}
+.sub-header{
+    margin-top:.6em;
+    margin-bottom: .5em;
+}
+.link{
+    padding-bottom: 2em;
+}
+/* main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1em;
+} */
+main{
+    width: 100%;
+    margin:0 auto;
+    padding-left:1em;
+    padding-right:1em;
+}
+main>.post{
+    margin-top:2em;
+}
+
+main>.post>img{
+    min-width: 250px;
+    min-height: 200px; 
+    width: 100%;
+    object-fit: cover;
+ 
+}
+main>.post>:nth-child(2),
+.post-hero>:nth-child(8),
+.post-hero>:nth-child(7),
+.post-hero>:nth-child(10),
+.aboutMe>h2,
+.aboutMe-paragraph,
+.aboutMe-paragraph,
+.aboutMe-paragraph,
+.aboutMe-paragraph{
+    margin-top: 1em;
+
+}
+.post-hero>h2{
+    margin-bottom: 1em;
+}
+
+main>.post>:nth-child(3){
+    font-size: 1.5rem;
+    margin-top: .5em;
+}
+main>.post>:nth-child(4),.post-hero>h2,.aboutMe>h2{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.hero>a{
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: .4em;
+}
+.post-hero,.aboutMe{
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-right:1em;
+}
+.aboutMe>.typo-container>img{
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutMe-header-title{
+    font-size: 2.125rem;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+}
+.post-hero{
+    /* max-width: 1300px; */
+    margin: 2em auto;
+}
+
+.post-hero>img{
+    max-height: 700px;
+    min-width: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-top: 2em;
+    margin-bottom: 2em; */
+    margin:2em auto;
+    
+
+}
+.post-hero>img,main>.post>img{
+    border-radius: 5px;
+
+}
+
+.view-more,.recent-post{
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 900;
+ 
+
+}
+footer{
+    background-color: #000;
+    color: #ffffff;
+    width: 100%;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1em;
+
+}
+footer>p{
+    font-size: .57rem;
+}
+footer>:nth-child(1){
+    font-weight: 900;
+}
+footer>:nth-child(2){
+    font-weight: 300;
+}
+
+
+@media (min-width:590px){
+   
+    .hero{
+        height: 90vh;
+
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .typo-container{
+        display: flex;
+        /* grid-template-columns: 1fr 4fr; */
+        grid-gap: 1em;
+        align-items: center;
+        margin-bottom:4em ;
+    }
+    main>.post>img{
+        height: 332px; 
+        min-width: 309px;
+        /* width: 100%; */
+        object-fit: cover;
+     
+    }
+    .margin-typo{
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+  
+    footer>p{
+        font-size: 1.5rem;
+        line-height: 1.5em;
+    }
+    .view-more,.recent-post,main>.post>:nth-child(4),.post-hero>h2,.aboutMe>h2,header>.logo>p{
+        font-size: 1.5rem;
+    }
+    .aboutMe-header-title{
+        font-size: 1.6rem;
+    }
+  
+    main>.post>:nth-child(3){
+        font-size: 2rem;
+    }
+
+    .hero>h1,.posts-title{
+        font-size: 2.5rem;
+    
+        
+    }
+ 
+    header>nav>a,.hero>:nth-child(1),main>.post>:nth-child(2),.post-hero>:nth-child(1), header>.logo>p{
+        font-size: 1.3rem;
+     
+    }
+
+}
+@media (min-width:1024px){
+   
+    .hero{
+        height: 93vh;
+    }
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
